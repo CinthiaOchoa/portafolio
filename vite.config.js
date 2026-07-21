@@ -1,9 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// Relative base so the build works whether it's deployed at
-// https://<user>.github.io/  or  https://<user>.github.io/<repo-name>/
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/portafolio/',
+  base: '/portafolio/', // <--- THIS LINE IS CRITICAL
 })
